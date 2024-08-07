@@ -1,0 +1,77 @@
+
+/* Definición de variables de color */
+:root {
+    --background-gradient-start: #FBF8EF;
+    --background-gradient-end: #E2E2E2;
+    --text-color: #353E4A;
+    --border-color: #9AC834;
+    --border-focus-color: #6ABF5A;
+    --button-gradient-start: #9AC834;
+    --button-gradient-end: #76A83F;
+    --error-color: #FF6F61;
+    --button-text-color: #FBF8EF;
+  }
+  
+  .form-container {
+    background: linear-gradient(135deg, var(--background-gradient-start), var(--background-gradient-end));
+    color: var(--text-color);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 24px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: var(--border-focus-color);
+    box-shadow: 0 0 8px rgba(106, 191, 90, 0.3);
+    outline: none;
+  }
+  
+  .submit-button {
+    background: linear-gradient(135deg, var(--button-gradient-start), var(--button-gradient-end));
+    color: var(--button-text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin: 0;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(135deg, var(--button-gradient-end), var(--button-gradient-start));
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  

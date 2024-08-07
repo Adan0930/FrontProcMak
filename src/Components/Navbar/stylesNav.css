@@ -1,0 +1,72 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables de color */
+  :root {
+    --background-color: #FBF8EF;
+    --text-color: #353E4A;
+    --accent-color: #9AC834;
+  }
+  
+  .navbar {
+    background: var(--background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: var(--text-color);
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .nav-item {
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links:hover {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
