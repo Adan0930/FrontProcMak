@@ -10,7 +10,7 @@ const LoginUserCompany = ()=>{
     };
 
     return (
-      <div className="form-container">
+      <div className="form-container-login">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group">
             <label className="form-label" htmlFor="emailCompany">Email Company</label>

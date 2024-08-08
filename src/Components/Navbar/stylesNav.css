@@ -13,13 +13,14 @@
   }
   
   .navbar {
-    background: var(--background-color);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(227, 228, 237, 0.50);
+    box-shadow: 0 0px 30px rgba(255,255,255,0.5);
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .navbar-container {
@@ -28,7 +29,6 @@
     height: 80px;
     width: 100%;
     max-width: 1500px;
-    padding: 0 20px;
   }
   
   .navbar-logo {
@@ -64,9 +64,46 @@
   }
   
   .nav-links:hover {
-    color: var(--background-color);
-    background-color: var(--accent-color);
-    border-radius: 4px;
+    color: var(--accent-color);
     transition: all 0.3s ease;
   }
-  
+  .button-login{
+    background-image: linear-gradient(to right, #A9D65B, #82B02B);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #00a84f;
+    display: block;
+    height: 50px;
+    font-size: 1em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+  }
+  .button-login:hover{
+    color: var(--background-color);
+  }
+  .button-login .nav-links-btn{
+  align-items: center;
+  background: var(--background-color);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+  }
+  .button-login:hover .nav-links-btn{
+    background: transparent;
+  }
+
+  .button-login .nav-links-btn{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    transition: all 0.3s ease;
+  }

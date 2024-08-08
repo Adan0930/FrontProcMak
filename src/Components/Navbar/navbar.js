@@ -30,8 +30,8 @@ const Navbar = ()=>{
                 </Link>
               </li>
 
-              <li className="nav-item">
-                <Link to="/login" className="nav-links">
+              <li className="button-login">
+                <Link to="/login" className="nav-links-btn">
                   Login
                 </Link>
               </li>

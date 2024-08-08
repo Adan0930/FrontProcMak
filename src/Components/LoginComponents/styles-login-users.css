@@ -11,15 +11,17 @@
     --button-text-color: #FBF8EF;
 }
 
-.form-container {
-    background: linear-gradient(135deg, var(--background-gradient-start), var(--background-gradient-end));
+ .form-container-login { 
+    border: 2px solid rgb(255, 255, 255);
+    backdrop-filter: blur 1px;
     color: var(--text-color);
     max-width: 300px;
-    margin: 0 auto;
+     margin: 0 auto; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     text-align: center;
+    
 }
 
 .form-group {
