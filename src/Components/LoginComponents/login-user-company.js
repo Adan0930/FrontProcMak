@@ -44,7 +44,9 @@ const LoginUserCompany = ()=>{
             />
             {errors.password && <span className="error-message">{errors.password.message}</span>}
           </div>
-  
+          <div className='form-group'>
+            <span className='register'><a href='/register/user'>Registrarme</a></span>
+          </div>
          
   
           <button className="submit-button" type="submit">Submit</button>

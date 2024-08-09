@@ -68,6 +68,9 @@ const FormUserCompany = ()=>{
       />
       {errors.confirmPassword && <p id="confirm-password-error" className="error-message">{errors.confirmPassword.message}</p>}
     </div>
+    <div className='form-group'>
+      <span className='Suscripcions-link'><a href='/Suscripciones'>Suscripciones</a></span>
+    </div>
 
     <button type="submit" className="submit-button">Enviar</button>
   </form>

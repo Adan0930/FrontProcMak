@@ -12,11 +12,16 @@
 }
 
  .form-container-login { 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    
     border: 2px solid rgb(255, 255, 255);
     backdrop-filter: blur 1px;
     color: var(--text-color);
     max-width: 300px;
-     margin: 0 auto; 
+    margin: 0 auto; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -26,6 +31,16 @@
 
 .form-group {
     margin-bottom: 15px;
+}
+
+.form-group .register a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.form-group .register a:hover{
+    border-bottom: 3px solid #9AC834;
+    
 }
 
 .form-label {
