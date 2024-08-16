@@ -1,5 +1,7 @@
-.cards-suscriptions{
+.cards-suscription{
+    padding: 30px;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

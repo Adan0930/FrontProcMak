@@ -29,6 +29,11 @@ const Navbar = ()=>{
                   Contacto
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/suscripciones" className="nav-links">
+                  Precios
+                </Link>
+              </li>
 
               <li className="button-login">
                 <Link to="/login" className="nav-links-btn">

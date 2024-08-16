@@ -7,6 +7,7 @@ const CardPremium = ()=>{
         <ul>
             <li className='li-free'>Hasta 100 usuarios </li>
             <li className='li-free'>Acceso a varias funcionalidades</li>
+            <li className='li-free'>Acceso Ilimitado</li>
             <li className='li-free'>Acceso a la App</li>
         </ul>
         <p className="card-price">$500/mes</p>

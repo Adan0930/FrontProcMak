@@ -7,6 +7,7 @@ const CardExpert = ()=>{
         <ul>
             <li className='li-free'>Hasta 500 usuarios </li>
             <li className='li-free'>Acceso a varias funcionalidades</li>
+            <li className='li-free'>Acceso Ilimitado</li>
             <li className='li-free'>Acceso a la App</li>
         </ul>
         <p className="card-price">1000/mes</p>
