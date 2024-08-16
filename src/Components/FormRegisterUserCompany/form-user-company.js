@@ -11,8 +11,12 @@ const FormUserCompany = ()=>{
 
     return (
   <form onSubmit={handleSubmit(onSubmit)} className="form-container">
-    
 
+    <div className='form-group'>
+      <a href='/'>
+        <img src='/images/Logo-ProcMak.svg' className='logo-procmak' alt='Logo'></img>
+      </a>
+    </div>
     <div className="form-group">
       <label htmlFor="company-email" className="form-label">Email de la Compañía:</label>
       <input
@@ -69,7 +73,7 @@ const FormUserCompany = ()=>{
       {errors.confirmPassword && <p id="confirm-password-error" className="error-message">{errors.confirmPassword.message}</p>}
     </div>
     <div className='form-group'>
-      <span className='Suscripcions-link'><a href='/Suscripciones'>Suscripciones</a></span>
+      <a href='/Suscripciones' className='suscripcions-link'>Suscripciones</a>
     </div>
 
     <button type="submit" className="submit-button">Enviar</button>

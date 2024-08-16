@@ -12,11 +12,15 @@
   }
   
   .form-container {
-    background: linear-gradient(135deg, var(--background-gradient-start), var(--background-gradient-end));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur 1px;
     color: var(--text-color);
     max-width: 300px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     text-align: center; /* Centrar el contenido, incluyendo el botón */
@@ -24,6 +28,11 @@
   
   .form-group {
     margin-bottom: 24px;
+  }
+  /* LOGO PROCMAK */
+
+  .logo-procmak{
+    width: 50px;
   }
   
   .form-label {
@@ -71,5 +80,16 @@
     color: var(--error-color);
     margin-top: 6px;
     font-size: 14px;
+  }
+
+  /* LINK SUSCRIPTIONS */
+
+  .suscripcions-link{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--text-color);
+  }
+  .suscripcions-link:hover{
+    border-bottom: 3px solid #9AC834;
   }
   

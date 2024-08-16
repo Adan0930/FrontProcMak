@@ -12,15 +12,13 @@
 }
 
  .form-container-login { 
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-    
-    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     backdrop-filter: blur 1px;
     color: var(--text-color);
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto; 
     padding: 20px;
     border-radius: 8px;
@@ -28,11 +26,15 @@
     text-align: center;
     
 }
-
 .form-group {
     margin-bottom: 15px;
 }
-
+/* LOGO PROCMAK */
+.logo-login{
+    width: 50px;
+    
+}
+/* LINK REGISTRO */
 .form-group .register a{
     text-decoration: none;
     color: var(--text-color);

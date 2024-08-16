@@ -3,7 +3,7 @@ import './styles-login-users.css';
 
 
 const LoginUserCompany = ()=>{
-    const {register, handleSubmit, formState:{errors},watch} = useForm();
+    const {register, handleSubmit, formState:{errors}} = useForm();
 
     const onSubmit = (data)=>{
         console.log(data);
@@ -12,6 +12,11 @@ const LoginUserCompany = ()=>{
     return (
       <div className="form-container-login">
         <form onSubmit={handleSubmit(onSubmit)}>
+          <div className='form-group'>
+            <a href='/'>
+              <img className='logo-login' src='images/Logo-ProcMak.svg' alt='logo' width={'100px'}></img>
+            </a>
+          </div>
           <div className="form-group">
             <label className="form-label" htmlFor="emailCompany">Email Company</label>
             <input
