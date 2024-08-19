@@ -1,12 +1,23 @@
 import {useForm} from 'react-hook-form';
 import './styles-login-users.css';
+import axios from 'axios';
 
 
 const LoginUserCompany = ()=>{
     const {register, handleSubmit, formState:{errors},watch} = useForm();
 
-    const onSubmit = (data)=>{
-        console.log(data);
+    const onSubmit = async (data,res)=>{
+        try{
+            const response = await axios.post('/login',data);
+            if(response.status === 200){
+              res.status(200).json({message:'Login Valido'})
+            }else{
+              res.status(400).json({message:'Erro al hacer login'})
+            }
+        }catch(error){
+          console.error(error)
+        }
+
     };
 
     return (

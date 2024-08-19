@@ -1,12 +1,23 @@
 import{useForm} from 'react-hook-form';
 import './styles-form-user-company.css';
+import axios from 'axios';
 
 const FormUserCompany = ()=>{
 
     const{register,handleSubmit,formState:{errors},getValues }=  useForm();
 
-    const onSubmit = (data)=>{
-        console.log(data);
+    const onSubmit = async(data)=>{
+       try{
+        const response = await axios.post('/register/user', data);
+
+        if(response.status === 200){
+          console.log('error en la insercion')
+        }else{
+          console.error('Existe un error ')
+        }
+       }catch(error){
+      console.error('El usuario no se registro', error)
+      }
     };
 
     return (
