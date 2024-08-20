@@ -1,39 +1,47 @@
+:root {
+  --background-gradient-start: #FBF8EF;
+  --background-gradient-end: #E2E2E2;
+  --text-color: #353E4A;
+  --border-color: #9AC834;
+  --border-focus-color: #6ABF5A;
+  --button-gradient-start: #9AC834;
+  --button-gradient-end: #76A83F;
+  --error-color: #FF6F61;
+  --button-text-color: #FBF8EF;
+}
+
+
 /* Contenedor del menú lateral */
 .sidebar {
-  width: 250px; /* Ajusta el ancho del menú según tu diseño */
-  background-color: #2c3e50; /* Color de fondo del menú */
-  height: 100vh; /* Altura completa de la ventana */
-  position: fixed; /* Fija el menú al lado izquierdo de la pantalla */
-  top: 0;
-  left: 0;
-  overflow: auto; /* Añade una barra de desplazamiento si el contenido es demasiado largo */
-  color: white; /* Color del texto */
+  width: 200px; 
+  background: linear-gradient(135deg, var(--background-gradient-start),var(--background-gradient-end));
+  color: var(--text-color);
+  height: 100vh;
 }
 
 /* Estilos de la lista del menú */
 .sidebar-menu {
-  list-style-type: none; /* Quita los puntos de la lista */
-  padding: 0; /* Quita el padding por defecto */
-  margin: 0; /* Quita el margin por defecto */
+  list-style-type: none; 
+  padding: 0;
+  margin: 0; 
 }
-
 .sidebar-menu li {
-  margin: 0; /* Quita el margin de los elementos de la lista */
+  margin: 0; 
 }
 
 .sidebar-menu li a {
   display: block;
-  padding: 15px; /* Espaciado alrededor del texto */
-  color: white; /* Color del texto del enlace */
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+  padding: 15px; 
+  color:var(--text-color); 
+  text-decoration: none; 
+  transition: background-color 0.3s; 
 }
 
 .sidebar-menu li a:hover {
-  background-color: #34495e; /* Color de fondo al pasar el ratón sobre el enlace */
+  background-color: var(--error-color); 
 }
 
 .sidebar-menu li a.active {
-  background-color: #1abc9c; /* Color de fondo para el enlace activo */
-  color: white; /* Color del texto para el enlace activo */
+  background-color: #1abc9c; 
+  color: white; 
 }

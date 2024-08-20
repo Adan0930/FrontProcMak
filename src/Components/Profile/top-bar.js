@@ -1,8 +1,8 @@
 // TopBar.js
 import React, { useState } from 'react';
-import './BottomBar.css'; // Asegúrate de tener este archivo para los estilos
+import './top-bar.css'; // Asegúrate de tener este archivo para los estilos
 
-const TopBar = () => {
+const TopBar = ()=>{
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
 
   const toggleProfileMenu = () => {
