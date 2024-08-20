@@ -1,18 +1,14 @@
 import {useForm} from 'react-hook-form';
+import apiAxios from '../../lib/axios/axios';
 import './styles-form-company.css';
-import axios from 'axios';
 
 const FormSignUpCompany = ()=>{
     const {register, handleSubmit, formState:{errors}} = useForm();
     
     const onSubmit = async (data) =>{
       try{
-        const response = await axios.post('/register/company',data);
-        if(response.status === 200){
-          console.log('El formulario se envio correctamente')
-        }else{
-          console.error('Error al enviar el formulario')
-        }
+        const response = await apiAxios.post('/register/company', data);
+        console.log(response.data)
       }catch(error){
         console.error('Error al enviar el formulario', error)
       }
@@ -23,7 +19,7 @@ const FormSignUpCompany = ()=>{
           <div className="form-group">
             <label htmlFor="name" className="form-label">Nombre Compañia:</label>
             <input
-              id="name"
+              id="NameCompany"
               type="text"
               {...register('name', { required: 'Nombre de la compañia es Requerido' })}
               className="form-input"
@@ -34,7 +30,7 @@ const FormSignUpCompany = ()=>{
           <div className="form-group">
             <label htmlFor="email" className="form-label">Correo electrónico:</label>
             <input
-              id="email"
+              id="EmailCompany"
               type="email"
               {...register('email', {
                 required: 'Correo electrónico es requerido',
