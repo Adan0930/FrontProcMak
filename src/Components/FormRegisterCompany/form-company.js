@@ -8,7 +8,6 @@ const FormSignUpCompany = ()=>{
     const onSubmit = async (data) =>{
       try{
         const response = await apiAxios.post('/register/company', data);
-        console.log(response.data)
       }catch(error){
         console.error('Error al enviar el formulario', error)
       }
@@ -19,9 +18,9 @@ const FormSignUpCompany = ()=>{
           <div className="form-group">
             <label htmlFor="name" className="form-label">Nombre Compañia:</label>
             <input
-              id="NameCompany"
+              id="Name"
               type="text"
-              {...register('name', { required: 'Nombre de la compañia es Requerido' })}
+              {...register('NameCompany', { required: 'Nombre de la compañia es Requerido' })}
               className="form-input"
             />
             {errors.name && <p className="error-message">{errors.name.message}</p>}
@@ -30,9 +29,9 @@ const FormSignUpCompany = ()=>{
           <div className="form-group">
             <label htmlFor="email" className="form-label">Correo electrónico:</label>
             <input
-              id="EmailCompany"
+              id="Email"
               type="email"
-              {...register('email', {
+              {...register('EmailCompany', {
                 required: 'Correo electrónico es requerido',
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
