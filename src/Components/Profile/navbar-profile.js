@@ -13,6 +13,7 @@ const Sidebar = ()=>{
         <div className={'sidebar'}>
           <ul className="sidebar-menu">
             <li>
+
               <Link to="/home"><GoHome className='icon-home'/>Home</Link>
             </li>
             <li>
@@ -24,9 +25,11 @@ const Sidebar = ()=>{
             <li>
               <Link to="/status"><IoSettingsOutline className='icon-set'/>Configuración</Link>
             </li>
+            
           </ul>
         </div>
       </div>
     );
 };
+
 export default Sidebar;

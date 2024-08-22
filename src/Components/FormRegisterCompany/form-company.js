@@ -1,14 +1,20 @@
 import {useForm} from 'react-hook-form';
-import apiAxios from '../../lib/axios/axios';
 import './styles-form-company.css';
+import axios from 'axios';
 
 const FormSignUpCompany = ()=>{
     const {register, handleSubmit, formState:{errors}} = useForm();
     
     const onSubmit = async (data) =>{
       try{
-        const response = await apiAxios.post('/register/company', data);
-        console.log(response.data)
+      
+        const response = await axios.post('/register/company',data);
+        if(response.status === 200){
+          console.log('El formulario se envio correctamente')
+        }else{
+          console.error('Error al enviar el formulario')
+        }
+
       }catch(error){
         console.error('Error al enviar el formulario', error)
       }
