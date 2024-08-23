@@ -6,6 +6,7 @@ import FormSignUpCompany from '../Components/FormRegisterCompany/form-company.js
 import FormUserCompany from '../Components/FormRegisterUserCompany/form-user-company.js';
 import Suscriptions from '../Pages/Suscriptions/Suscriptions.js';
 import Profile from '../Pages/home-profile/profile.js';
+import Orders from '../Pages/Orders/index.js';
 
 
 
@@ -22,7 +23,7 @@ const ComRoutes = ()=>{
 
                 <Route path='/register/user' Component={FormUserCompany}/>
                 <Route path='/profile' Component={Profile}/>
-
+                <Route path='/orders' Component={Orders}/>
                 <Route path='/register/user' Component={FormUserCompany}/>
                 
             
