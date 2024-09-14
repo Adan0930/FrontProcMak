@@ -18,15 +18,11 @@ const ComRoutes = ()=>{
                 <Route path='/' Component={Home} />
                 <Route path='/login' Component={Login}/>
                 <Route path='/register/company' Component={FormSignUpCompany}/>
-
                 <Route path='/Suscripciones' Component={Suscriptions}/>
-
                 <Route path='/register/user' Component={FormUserCompany}/>
                 <Route path='/profile' Component={Profile}/>
                 <Route path='/orders' Component={Orders}/>
                 <Route path='/register/user' Component={FormUserCompany}/>
-                
-            
             </Routes>
         </Router>
     );

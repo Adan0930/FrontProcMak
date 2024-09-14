@@ -2,7 +2,7 @@ import CreateOrder from '../../Components/orders/createOrder';
 import './orders.css';
 
 const Orders = ()=>{
-    return( 
+    return(
         <CreateOrder/>
     )
 };
