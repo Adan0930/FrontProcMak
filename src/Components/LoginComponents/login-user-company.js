@@ -1,21 +1,25 @@
 import {useForm} from 'react-hook-form';
 import './styles-login-users.css';
-import axios from 'axios';
+import axios from 'axios'; 
 
 
 const LoginUserCompany = ()=>{
     const {register, handleSubmit, formState:{errors}} = useForm();
 
-    const onSubmit = async (data,res)=>{
+    const onSubmit = async (data)=>{
         try{
-            const response = await axios.post('/login',data);
+            const response = await axios.post('http://localhost:3001/login',data);
             if(response.status === 200){
-              res.status(200).json({message:'Login Valido'})
+              const token = response.data.token;
+              localStorage.setItem('authToken', token);
+              window.location.href= '/profile';
+              alert('Inicio de sesion exitoso');
             }else{
-              res.status(400).json({message:'Erro al hacer login'})
+              alert('Error de login')
             }
         }catch(error){
           console.error(error)
+          alert('Existe un error al hacer login')
         }
 
     };
@@ -29,34 +33,34 @@ const LoginUserCompany = ()=>{
             </a>
           </div>
           <div className="form-group">
-            <label className="form-label" htmlFor="emailCompany">Email Company</label>
+            <label className="form-label" htmlFor="EmailCompany">Email Company</label>
             <input
               className="form-input"
-              id="emailCompany"
+              id="EmailCompany"
               type="email"
-              {...register('emailCompany', { required: 'Email Company is required' })}
+              {...register('EmailCompany', { required: 'Email Company is required' })}
             />
             {errors.emailCompany && <span className="error-message">{errors.emailCompany.message}</span>}
           </div>
   
           <div className="form-group">
-            <label className="form-label" htmlFor="username">Username</label>
+            <label className="form-label" htmlFor="NameUser">Username</label>
             <input
               className="form-input"
-              id="username"
+              id="NameUser"
               type="text"
-              {...register('username', { required: 'Username is required' })}
+              {...register('NameUser', { required: 'Username is required' })}
             />
             {errors.username && <span className="error-message">{errors.username.message}</span>}
           </div>
   
           <div className="form-group">
-            <label className="form-label" htmlFor="password">Password</label>
+            <label className="form-label" htmlFor="Password">Password</label>
             <input
               className="form-input"
-              id="password"
+              id="Password"
               type="password"
-              {...register('password', { required: 'Password is required' })}
+              {...register('Password', { required: 'Password is required' })}
             />
             {errors.password && <span className="error-message">{errors.password.message}</span>}
           </div>
@@ -65,7 +69,7 @@ const LoginUserCompany = ()=>{
           </div>
          
   
-          <button className="submit-button" type="submit">Submit</button>
+          <button className="submit-button" type="submit">Acceder</button>
         </form>
       </div>
     );

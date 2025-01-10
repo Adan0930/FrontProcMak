@@ -8,10 +8,10 @@ const FormUserCompany = ()=>{
 
     const onSubmit = async(data)=>{
        try{
-        const response = await axios.post('/register/user', data);
+        const response = await axios.post('http://localhost:3001/register/user', data);
 
         if(response.status === 200){
-          console.log('error en la insercion')
+          console.log('la insersion fue correcta')
         }else{
           console.error('Existe un error ')
         }

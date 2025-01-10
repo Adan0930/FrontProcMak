@@ -7,7 +7,16 @@ const FormSignUpCompany = ()=>{
     
     const onSubmit = async (data) =>{
       try{
+<<<<<<< Updated upstream
         const response = await apiAxios.post('/register/company', data);
+=======
+        const response = await axios.post('http://localhost:3001/register/company',data);
+        if(response.status === 200){
+          console.log('El formulario se envio correctamente')
+        }else{
+          console.error('Error al enviar el formulario') 
+        }
+>>>>>>> Stashed changes
       }catch(error){
         console.error('Error al enviar el formulario', error)
       }
