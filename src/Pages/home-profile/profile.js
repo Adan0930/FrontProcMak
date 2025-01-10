@@ -1,11 +1,10 @@
 import Sidebar from "../../Components/Profile/navbar-profile";
-import BottomBar from "../../Components/Profile/botton.bar";
+import MainProfile from '../../Components/Profile/main-profile';
 
 const Profile =()=>{
     return(
-        <Sidebar/>
-        // <BottomBar/>
-    )
-};
+        <Sidebar/>,
+         <MainProfile/>
+    )}
 
 export default Profile

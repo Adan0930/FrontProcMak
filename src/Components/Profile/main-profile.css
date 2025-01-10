@@ -1,0 +1,10 @@
+.profile {
+    display: flex;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+  }
+  
