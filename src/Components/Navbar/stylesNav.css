@@ -8,13 +8,13 @@
   /* Variables de color */
   :root {
     --background-color: #FBF8EF;
-    --text-color: #353E4A;
-    --accent-color: #9AC834;
+    --text-color: #ff0000;
+    --accent-color: #91ff00;
   }
   
   .navbar {
     backdrop-filter: blur(5px);
-    border: 2px solid rgba(227, 228, 237, 0.50);
+    border: 2px solid rgba(0, 25, 250, 0.5);
     box-shadow: 0 0px 30px rgba(255,255,255,0.5);
     height: 80px;
     display: flex;
@@ -47,6 +47,7 @@
     align-items: center;
     list-style: none;
     text-align: center;
+    color: var(--text-color);
   }
   
   .nav-item {
@@ -54,7 +55,7 @@
   }
   
   .nav-links {
-    color: var(--text-color);
+    color:red;
     display: flex;
     align-items: center;
     text-decoration: none;
