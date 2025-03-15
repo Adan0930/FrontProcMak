@@ -23,7 +23,7 @@ const FormSignUpCompany = ()=>{
         }else{
           console.error('Error al enviar el formulario')
 
-        }
+        }   }
 
       }catch(error){
         console.error('Error al enviar el formulario', error)
